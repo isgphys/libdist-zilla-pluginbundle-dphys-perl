@@ -1,0 +1,20 @@
+Source: libdist-zilla-pluginbundle-dphys-perl
+Section: perl
+Priority: optional
+Maintainer: Elmar S. Heeb <elmar@heebs.ch>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl, dh-dist-zilla
+Standards-Version: 3.9.5
+Homepage: https://metacpan.org/release/Dist-Zilla-PluginBundle-DPHYS
+
+Package: libdist-zilla-pluginbundle-dphys-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: standard Dist::Zilla plugins for DPHYS
+ This bundle sets the standard way to build Perl packages at the ISG of
+ D-PHYS. It can and shall be updated when needed. All subsequent builds of new
+ or old packages will then profit from the improvments. The intention is to
+ support reliable quality builds without much effort and to set a standard
+ accross DPHYS packages that can evolve with time.
+ .
+ This bundle was originally based on the Classic bundle of Dist::Zilla.
