@@ -1,3 +1,6 @@
+use strict;
+use warnings;
+
 package Dist::Zilla::PluginBundle::DPHYS;
 # ABSTRACT: standard Dist::Zilla plugins for DPHYS
 
