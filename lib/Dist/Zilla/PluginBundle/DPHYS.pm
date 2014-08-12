@@ -10,32 +10,36 @@ with 'Dist::Zilla::Role::PluginBundle::Easy';
 use namespace::autoclean;
 
 sub configure {
-  my ($self) = @_;
+    my ($self) = @_;
 
-  $self->add_plugins(qw(
-    GatherDir
-    PruneCruft
-    ManifestSkip
-    MetaYAML
-    License
-    Readme
-    PodWeaver
-    PkgVersion
-    PodVersion
-    PodCoverageTests
-    PodSyntaxTests
-    ExtraTests
-    ExecDir
-    ShareDir
-
-    AutoPrereqs
-    Test::Perl::Critic
-
-    MakeMaker
-    Manifest
-
-    FakeRelease
-  ));
+    $self->add_plugins(
+        qw(
+            GatherDir
+            PruneCruft
+        ),
+        [
+            PruneFiles => { filename => 'debian' }
+        ],
+        qw(
+            ManifestSkip
+            MetaYAML
+            License
+            Readme
+            PodWeaver
+            PkgVersion
+            PodVersion
+            PodCoverageTests
+            PodSyntaxTests
+            ExtraTests
+            ExecDir
+            ShareDir
+            AutoPrereqs
+            Test::Perl::Critic
+            MakeMaker
+            Manifest
+            FakeRelease
+        )
+    );
 }
 
 __PACKAGE__->meta->make_immutable;
