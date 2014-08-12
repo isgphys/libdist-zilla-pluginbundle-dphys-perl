@@ -30,6 +30,8 @@ sub configure {
 
     MakeMaker
     Manifest
+
+    FakeRelease
   ));
 }
 
@@ -53,6 +55,7 @@ This bundle was originally based on L<@Classic|Dist::Zilla::PluginBundle::Classi
 * L<Dist::Zilla::Plugin::MetaYAML>
 * L<Dist::Zilla::Plugin::License>
 * L<Dist::Zilla::Plugin::Readme>
+* L<Dist::Zilla::Plugin::PodWeaver>
 * L<Dist::Zilla::Plugin::PkgVersion>
 * L<Dist::Zilla::Plugin::PodVersion>
 * L<Dist::Zilla::Plugin::PodCoverageTests>
@@ -60,8 +63,11 @@ This bundle was originally based on L<@Classic|Dist::Zilla::PluginBundle::Classi
 * L<Dist::Zilla::Plugin::ExtraTests>
 * L<Dist::Zilla::Plugin::ExecDir>
 * L<Dist::Zilla::Plugin::ShareDir>
+* L<Dist::Zilla::Plugin::AutoPrereqs>
+* L<Dist::Zilla::Plugin::Test::Perl::Critic>
 * L<Dist::Zilla::Plugin::MakeMaker>
 * L<Dist::Zilla::Plugin::Manifest>
+* L<Dist::Zilla::Plugin::FakeRelease>
 
 =head1 SEE ALSO
 
