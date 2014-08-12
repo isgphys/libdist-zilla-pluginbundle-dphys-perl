@@ -55,26 +55,8 @@ packages that can evolve with time.
 
 This bundle was originally based on L<@Classic|Dist::Zilla::PluginBundle::Classic>.
 
-=for :list
-* L<Dist::Zilla::Plugin::GatherDir>
-* L<Dist::Zilla::Plugin::PruneCruft>
-* L<Dist::Zilla::Plugin::ManifestSkip>
-* L<Dist::Zilla::Plugin::MetaYAML>
-* L<Dist::Zilla::Plugin::License>
-* L<Dist::Zilla::Plugin::Readme>
-* L<Dist::Zilla::Plugin::PodWeaver>
-* L<Dist::Zilla::Plugin::PkgVersion>
-* L<Dist::Zilla::Plugin::PodVersion>
-* L<Dist::Zilla::Plugin::PodCoverageTests>
-* L<Dist::Zilla::Plugin::PodSyntaxTests>
-* L<Dist::Zilla::Plugin::ExtraTests>
-* L<Dist::Zilla::Plugin::ExecDir>
-* L<Dist::Zilla::Plugin::ShareDir>
-* L<Dist::Zilla::Plugin::AutoPrereqs>
-* L<Dist::Zilla::Plugin::Test::Perl::Critic>
-* L<Dist::Zilla::Plugin::MakeMaker>
-* L<Dist::Zilla::Plugin::Manifest>
-* L<Dist::Zilla::Plugin::FakeRelease>
+See C<perldoc -m Dist::Zilla::PluginBundle::DPHYS> for an up-to-date list of
+the plugins included.
 
 =head1 SEE ALSO
 
